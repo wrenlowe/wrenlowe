@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Page Title</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+/* Style the body */
+
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial;
+}
+
+/* Style tab links */
+
+/* Header/Logo Title */
+.header {
+  padding: 15px;
+  text-align: left;
+  background:  #d7e9f9;
+  color: black;
+  font-size: 10px;
+}
+
+.tablink {
+  background-color: #555;
+  color: white;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 17px;
+  width: 33%;
+}
+
+.tablink:hover {
+  background-color: #777;
+}
+
+/* Style the tab content (and add height:100% for full page content) */
+.tabcontent {
+  color: black;
+  display: none;
+  padding: 100px 20px;
+  height: 100%;
+}
+.column.left {
+  float: left;
+  width: 30%;
+  padding: 15px;
+}
+.column.right {
+  float: right;
+  width: 60%;
+  padding: 15px;
+}
+
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+#Home {background-color: #d7e9f9;}
+#Experiences {background-color: #d7e9f9;}
+#Notes {background-color: #d7e9f9};
+
+/* Page Content */
+.content {padding:20px;}
+</style>
+</head>
+<body>
+
+
+    <div class="header">
+      <h1 style="text-align:left;">Wren Lowe</h1>
+          <h2 style="text-align:center;">Address: 16 Benjamin Way, Ellicott City MD, 21043 ᐧ Phone: 410-446-5746wren.lowe@gmail.com ᐧ LinkedIn: www.linkedin.com/in/wrenlowe  
+          </h2>
+      </div>
+    <body>
+      <button class="tablink" onclick="openPage('Home', this, 'black')"id="defaultOpen">Home</button>
+      <button class="tablink" onclick="openPage('Experiences', this, 'black')" >Experiences</button>
+      <button class="tablink" onclick="openPage('Notes', this, 'black')">Notes</button>
+     
+  
+        <div id="Home" class="tabcontent">
+        <h2 style="text-align:center;">Home</h2>
+        <div class="row">
+          <div class="column left">
+            <img src="img_girl.jpg" alt="Girl in a jacket" style="width:400px;height:400px;">
+        </div>
+        
+        <div class="column right">
+          <h3> About Me</h3>
+          <p> My name is Wren Lowe and I am a student at the University of Maryland - College Park. I am currently studying Computer Science with
+              a minor in Technology Entrepreneurship and Corporate Innovation (MTECH). I am focused on expanding my knowledge within the Computer 
+              Science field through the use of school and other mediums. In the future I am interested in obtaining a CS internship where I can further
+              grow my knowledge and skills through real-world experiences and advide from my employeers and colleagues. 
+          </p>
+          </div>
+          </div>
+        </div>
+      
+        <div id="Experiences" class="tabcontent">
+            <h2 style="text-align:center;">Experiences</h2>
+              <h3> Education: </h3>
+              <p> University of Maryland - College Park - College Park, MD <br>
+                  Bachelor of Science: Computer Science, Expected in 12/2024
+              </p>
+            <ul>
+                <li> 3.789 GPA </li>
+                <li> Dean's Scholarship Recipient </li>
+                <li> Member of University Honors: University Honors is a part of the Honor College at the University of Maryland, which allows
+                  students to explore a variety of topics and perspectives. </li>
+                <li> Dean's List Fall 2021 : Maintained above a 3.5 GPA for the Fall semester </li>
+                <li>  Dean's List Spring 2022: Maintained above a 3.5 GPA for the Spring semester </li>
+            </ul>
+            <p> The Community College of Baltimore County - Catonsville, MD              <br>
+                Associate of Arts: General Studies, 05/2021 
+            </p>
+            <ul>
+                <li>4.0 GPA </li>
+                <li>Graduated Summa Cum Laude</li>
+                <li>Graduated concurently with my High School graduation</li>
+            </ul>
+            <h3> Activites: </h3>
+            <p>Association of Women in Computing Member <br>
+            University of Maryland: January 2021 - Present</p>
+            <ul> 
+              <li>AWC strives to promote inclusivity in STEM by giving women and allies of computing 
+              a platform to succeed. This association gives students an oppertunity to connect with people
+              of similar intrests. AWC host a variety of workshops and events which allow its members to learn
+              more about the computer science field. </li>
+            <li> I am currently a peer mentor to a group of AWC members. As a peer mentor I offer my advice,
+               share my experiences relating to the CS department, and supprt my group in any way possible.
+            </li>
+          </ul>
+        </ul>
+        <h3> Work Experiences: </h3>
+        <p>Lifeguard, 05/2020 to 09/2021 
+          <br>
+          Rolling Road Country Club - Catonsville, Maryland </p>
+        <ul> 
+          <li>Monitored safety of guests in and around the swimming pool. </li>
+        <li> Learned and maintained proficiency in first responder skills such as First Aid and CPR 
+          to offer individuals in distress optimal support. </li>
+        <li> Maximized customer satisfaction by greeting pool patrons with courtesy 
+          and resolving issues promptly. </li>
+        <li> Attentively monitored swimmers to identify distress.
+        </li>
+        <li>  Work 30 hours a week during the summer.
+        </li>
+        
+      </ul>
+      <p>Cashier, 10/2019 to 11/2020 
+        <br>
+        Ledo's Pizza - Ellicott City, Maryland  </p>
+      <ul> 
+        <li>Operated cash register for cash, check and credit card transactions with excellent accuracy levels. </li>
+      <li> Worked flexible schedule and extra shifts to meet business needs, while attending school full-time.</li>
+      <li> Maximized customer satisfaction by greeting pool patrons with courtesy 
+        and resolving issues promptly. </li>
+      <li> Helped customers complete purchases, locate items and join reward programs.
+      </li>
+      <li>  Restocked and organized merchandise throughout the store.
+      </li>
+      <li>   Work 20 hour weeks during the school year and 30 hour weeks during the summer.
+      </li>
+            
+        </div>
+      
+        <div id="Notes" class="tabcontent">
+            <h2 style="text-align:center;">Notes</h2>
+            <h3>CMSC216:</h3>
+            <p> Taken Fall 2022</p>
+            <ul>
+                <li>Bachelor of photogenic posing, 2010</li>
+                <li>Llamaness certification from the Llama Institute, 2014</li>
+                <li>I coded a website, 2017</li>
+            </ul>
+            <h3>CMSC250:</h3>
+            <ul>
+                <li>Bachelor of photogenic posing, 2010</li>
+                <li>Llamaness certification from the Llama Institute, 2014</li>
+                <li>I coded a website, 2017</li>
+            </ul>
+            <h3>CMSC132</h3>
+            <ul>
+                <li>Bachelor of photogenic posing, 2010</li>
+                <li>Llamaness certification from the Llama Institute, 2014</li>
+                <li>I coded a website, 2017</li>
+            </ul>
+            <h3>CMSC131</h3>
+            <ul>
+                <li>Bachelor of photogenic posing, 2010</li>
+                <li>Llamaness certification from the Llama Institute, 2014</li>
+                <li>I coded a website, 2017</li>
+            </ul>
+            <h3>MATH240:</h3>
+            <ul>
+                <li>Bachelor of photogenic posing, 2010</li>
+                <li>Llamaness certification from the Llama Institute, 2014</li>
+                <li>I coded a website, 2017</li>
+            </ul>
+            <h3>MATH141</h3>
+            <ul>
+                <li>Bachelor of photogenic posing, 2010</li>
+                <li>Llamaness certification from the Llama Institute, 2014</li>
+                <li>I coded a website, 2017</li>
+            </ul>
+            <h3>MATH140</h3>
+            <ul>
+                <li>Bachelor of photogenic posing, 2010</li>
+                <li>Llamaness certification from the Llama Institute, 2014</li>
+                <li>I coded a website, 2017</li>
+            </ul>
+      </div>
+      
+      
+      
+       </body>
+    
+</div>
+  </head>
+  <body>
+    <script>
+      function openPage(pageName,elmnt,color) {
+        var i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+          tabcontent[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tablink");
+        for (i = 0; i < tablinks.length; i++) {
+          tablinks[i].style.backgroundColor = "";
+        }
+        document.getElementById(pageName).style.display = "block";
+        elmnt.style.backgroundColor = color;
+      }
+      
+      // Get the element with id="defaultOpen" and click on it
+      document.getElementById("defaultOpen").click();
+      </script>
+  </body>
+</html>
