@@ -1,9 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  
 <title>Page Title</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous"></head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 <style>
 /* Style the body */
 
@@ -19,9 +25,10 @@ body, html {
 .header {
   padding: 15px;
   text-align: left;
-  background:  #d7e9f9;
+  background:  #84b5e0;
   color: black;
-  font-size: 10px;
+  font-size: 8x;
+  font-family: serif;
 }
 
 .tablink {
@@ -33,7 +40,7 @@ body, html {
   cursor: pointer;
   padding: 14px 16px;
   font-size: 17px;
-  width: 33%;
+  width: 25%;
 }
 
 .tablink:hover {
@@ -49,12 +56,22 @@ body, html {
 }
 .column.left {
   float: left;
-  width: 30%;
+  width: 40%;
   padding: 15px;
 }
 .column.right {
   float: right;
   width: 60%;
+  padding: 15px;
+}
+.column.icon {
+  float: right;
+  width: 15%;
+  padding: 15px;
+}
+.column.desc {
+  float: left;
+  width: 85%;
   padding: 15px;
 }
 
@@ -65,9 +82,10 @@ body, html {
   display: table;
   clear: both;
 }
-#Home {background-color: #d7e9f9;}
-#Experiences {background-color: #d7e9f9;}
-#Notes {background-color: #d7e9f9};
+#Home {background-color: #f0f5f9;}
+#Experiences {background-color:#f0f5f9;}
+#Notes {background-color: #f0f5f9;}
+#Contact.Me {background-color: #f0f5f9;}
 
 /* Page Content */
 .content {padding:20px;}
@@ -78,31 +96,34 @@ body, html {
 
     <div class="header">
       <h1 style="text-align:left;">Wren Lowe</h1>
-          <h2 style="text-align:center;">Address: 16 Benjamin Way, Ellicott City MD, 21043 ᐧ Phone: 410-446-5746wren.lowe@gmail.com ᐧ LinkedIn: www.linkedin.com/in/wrenlowe  
-          </h2>
+          
       </div>
     <body>
       <button class="tablink" onclick="openPage('Home', this, 'black')"id="defaultOpen">Home</button>
       <button class="tablink" onclick="openPage('Experiences', this, 'black')" >Experiences</button>
       <button class="tablink" onclick="openPage('Notes', this, 'black')">Notes</button>
+      <button class="tablink" onclick="openPage('Contact Me', this, 'black')">Contact Me</button>
      
   
         <div id="Home" class="tabcontent">
         <h2 style="text-align:center;">Home</h2>
-        <div class="row">
-          <div class="column left">
-            <img src="img_girl.jpg" alt="Girl in a jacket" style="width:400px;height:400px;">
+        <div class="container">
+          <div class="row">
+            <div class="column left">      
+          <img src="IMG_5962.jpg" class="img-thumbnail" alt="Profile Picture" width="304" height="236"> 
         </div>
         
         <div class="column right">
           <h3> About Me</h3>
-          <p> My name is Wren Lowe and I am a student at the University of Maryland - College Park. I am currently studying Computer Science with
+          <p style="font-size:2vw"> 
+            My name is Wren Lowe and I am a student at the University of Maryland - College Park. I am currently studying Computer Science with
               a minor in Technology Entrepreneurship and Corporate Innovation (MTECH). I am focused on expanding my knowledge within the Computer 
               Science field through the use of school and other mediums. In the future I am interested in obtaining a CS internship where I can further
-              grow my knowledge and skills through real-world experiences and advide from my employeers and colleagues. 
+              grow my knowledge and skills through real-world experiences and advise from my employeers and colleagues. 
           </p>
           </div>
           </div>
+        </div>
         </div>
       
         <div id="Experiences" class="tabcontent">
@@ -139,7 +160,16 @@ body, html {
                share my experiences relating to the CS department, and supprt my group in any way possible.
             </li>
           </ul>
-        </ul>
+          <p>Technica <br>
+            University of Maryland: October/2022</p>
+            <ul> 
+              <li>Technica is the worlds largest hackathon for underpresented genders. Technica takes place over
+                the span of 24 hours where hackers are encouraged to build a project that they are interested in. 
+                
+              </li>
+            
+          </ul>
+        
         <h3> Work Experiences: </h3>
         <p>Lifeguard, 05/2020 to 09/2021 
           <br>
@@ -175,50 +205,158 @@ body, html {
       
         <div id="Notes" class="tabcontent">
             <h2 style="text-align:center;">Notes</h2>
-            <h3>CMSC216:</h3>
-            <p> Taken Fall 2022</p>
-            <ul>
-                <li>Bachelor of photogenic posing, 2010</li>
-                <li>Llamaness certification from the Llama Institute, 2014</li>
-                <li>I coded a website, 2017</li>
-            </ul>
             <h3>CMSC250:</h3>
+            <p> Taken Fall 2022 <br> Professor: Paul Kline</p>
             <ul>
-                <li>Bachelor of photogenic posing, 2010</li>
-                <li>Llamaness certification from the Llama Institute, 2014</li>
-                <li>I coded a website, 2017</li>
+                <li> 
+                  <p> Truth Tables and Implications:</p>
+                  <ul>
+                    <li><a href="https://drive.google.com/file/d/1HB_UEFN4F6iorIFLFUz9cz9C63vRhmFG/view">Lecture One</a></li>
+                    <li><a href="https://drive.google.com/file/d/167qXSESUPZMAdyxgObtGvL5KHXXF8aaG/view">Discussion One</a></li>
+                    <li><a href="https://drive.google.com/file/d/1hHpqLAgsWm3FzBZOJcVqTwF-LjWbzOBA/view">Lecture Two</a></li>
+                    <li><a href="https://drive.google.com/file/d/1ahaVSFhQGjczSvl4daPyBZlbAcdzJ5XW/view">Discussion Two</a></li>
+                    <li><a href="https://drive.google.com/file/d/1-lliZF3Z9bx7J2yB_hA-AJTBDpxTH9rk/view">Lecture Three</a></li>
+                  </ul>
+                  <li>
+                    <p> Contionals, Laws of Equivalence, Circuits, and Rules of Inference </p>
+                  <ul>
+                    <li><a href="https://drive.google.com/drive/u/0/folders/1CK2bn2WbapzSey1YpE5C_ghK24o3xMAl">Lecture Four</a></li>
+                    <li><a href="https://drive.google.com/file/d/1RQE6XO0VdEUy93Tna9Wz4w2WWklZFwEn/view">Discussion Three</a></li>
+                    <li><a href="https://drive.google.com/drive/u/0/folders/1CK2bn2WbapzSey1YpE5C_ghK24o3xMAl">Lecture Five</a></li>
+                    <li><a href="https://drive.google.com/file/d/1mbxhGVCrjWvTSwZkaUXUm2ov3taMIe5b/view">Discussion Four</a></li>
+                  </ul>
+                  </li>
+                  <li>
+                    <p> Sets, Quantifiers, and Number Theory </p>
+                  <ul>
+                    <li><a href="https://drive.google.com/file/d/1whATFiSRTzjpcmy8AgAOyHCXyAAnPJeo/view">Lecture Six</a></li>
+                    <li><a href="https://drive.google.com/drive/u/0/folders/1CK2bn2WbapzSey1YpE5C_ghK24o3xMAl">Discussion Five</a></li>
+                    <li><a href="https://drive.google.com/file/d/106vPc25Up7NP_cTkeZanjlRqTFW3p8NS/view">Discussion Six</a></li>
+                    <li><a href="https://drive.google.com/file/d/1LO1NdS97xq5H91IjcwzFE3jkjtcd5B4c/view">Supplement Set Notes</a></li>
+                    <li><a href="https://drive.google.com/file/d/1V-cuJRvfwLT6-QNhi9lrAqArtHEoux84/view">Extra Set Notes</a></li>
+                    <li><a href="https://drive.google.com/file/d/1TbPbU-VLd-MjCrtOZ2ZvBPPh2bY9IOxe/view">Extra Number Theory Notes</a></li>
+                    <li><a href="https://drive.google.com/file/d/1pya-SeRNrFSbNhiQyHy1fGgKsOk-IgMZ/view">Extra Quantifier Notes</a></li>
+                  </ul>
+                  </li>
+                  <li>
+                    <p> Proofs: Weak, Strong, and Structural </p>
+                  <ul>
+                    <li><a href="https://drive.google.com/file/d/1AHf4pa_ZZfgnaLxj2ZLGVHM07zwY7KJJ/view">Lecture Eight</a></li>
+                    <li><a href="https://drive.google.com/file/d/1s-7XYkgLGNg3jr4Xinq5MpJOpnCDYIQq/view">Discussion Seven</a></li>
+                    <li><a href="https://drive.google.com/file/d/1KYm-8qW9YTKYi0YIusvAegMxKb3TLSk8/view">Lecture Nine</a></li>
+                    <li><a href="https://drive.google.com/file/d/1p3D62gGsn2fEMXSs-WG1yN8fxTSgG7Yu/view">Discussion Eight</a></li>
+                    <li><a href="https://drive.google.com/file/d/1o4W82iVgdzPY_SYMRE8SF9QIqwx8Wb-H/view">Lecture Thirteen: Set Proofs</a></li>
+                    <li><a href="https://drive.google.com/file/d/1bt8pxpT4CcXX_7GfxjWBj9D6xKxgQirB/view">Discussion Ten: Set Proofs</a></li>
+                    <li><a href="https://drive.google.com/file/d/1NHD03cC47o4523oW26VVPoHDaD6ZfPaw/view">Discussion Eleven: Set Proof</a></li>
+                    <li><a href="https://drive.google.com/file/d/156y2YF1uYM3Da4hicuPmjFDXmCm-g58c/view">Lecture Sixteen: Weak Induction</a></li>
+                    <li><a href="https://drive.google.com/file/d/15Prk2Y44TXeff2GQlwandQiH_f12Ndhk/view">Discussion Fourteen: Weak Induction</a></li>
+                    <li><a href="https://drive.google.com/file/d/11kKk2ZL1IshTdR2du0-5euA8NKgDD51u/view">Lecture Seventeen: Structural Induction</a></li>
+                    <li><a href="https://drive.google.com/file/d/1IqdRWl8P4c_XngqW-INnSlV5D_ORBdX_/view">Discussion Fifteen: Strong Induction</a></li>
+                    <li><a href="https://drive.google.com/file/d/1GZJelA9ZdE-pqp5PEfWffBkIL0G9ZJ0n/view">Lecture Eighteen: Structural Induction</a></li>
+                    <li><a href="https://drive.google.com/file/d/1KDd1wu3RW9ZKypPiKH_EcgYQ3QYMiLLG/view">Discussion Sixteen: Structural Induction</a></li>
+                    <li><a href="https://drive.google.com/file/d/1yRsnx1ypUAYvi1yeDF9dQrSWWkJcln-L/view">Lecture Nineteen: Structural Induction: Binary trees</a></li>
+                    <li><a href="https://drive.google.com/file/d/1W-33j2V4F_b3wdfqPoNTG-j3Yk8oAFAT/view">Discussion Seventeen: Structural Induction: Binary trees</a></li>
+                
+                  </ul>
+                  </li>
+                  <li>
+                    <p> Relations, Functions, Countability, and Combinatorics </p>
+                  <ul>
+                    <li><a href="https://drive.google.com/drive/u/0/folders/1CK2bn2WbapzSey1YpE5C_ghK24o3xMAl">Lecture Eleven</a></li>
+                    <li><a href="https://drive.google.com/file/d/1ZfSXNHaTq16a_UpZfCDd7Yq7AJdqUCoP/view">Discussion Nine</a></li>
+                    <li><a href="https://drive.google.com/file/d/1S49TfNSCaK_1ZTHCv6XDjBBnYGzA9bap/view">Lecture Twelve</a></li>
+                    <li><a href="https://drive.google.com/file/d/1a4EWxAWoYJm_PWMpH1ldrUHpeU86RPOM/view">Discussion Twelve: Countability</a></li>
+                    <li><a href="https://drive.google.com/file/d/1gXo8ucjHwHsElAtSTktrC4NvrqTLIrWd/view">Lecture Fourteen: Countability</a></li>
+                    <li><a href="https://drive.google.com/file/d/1nnF8d8urLjt8QnRUGJ9X4k5hiDRB-3oD/view">Lecture Fifteen: Countability</a></li>
+                    <li><a href="https://drive.google.com/file/d/1uWzxas5qDLyweKs53nrSgKn3llCyJrGJ/view">Discussion Thirteen: Cardinality</a></li>
+                    <li><a href="https://drive.google.com/file/d/1KWsijTonIMEvh2Ui2DWNvYFSdqguJOnr/view">Lecture Twenty: Combinatorics</a></li>
+                    <li><a href="https://drive.google.com/file/d/1Gb_bR-vyixB1MCxsAiEe4Ri7p9apgiRa/view">Discussion Eighteen: Combinatorics</a></li>
+                    
+                    
+                  </ul>
+                  </li>
+                
             </ul>
-            <h3>CMSC132</h3>
+            <h3>CMSC216:</h3>
+            <p> Taken Fall 2022 <br> Professor: Herve Franchesci</p>
             <ul>
-                <li>Bachelor of photogenic posing, 2010</li>
-                <li>Llamaness certification from the Llama Institute, 2014</li>
-                <li>I coded a website, 2017</li>
+              <li><a href="https://drive.google.com/drive/u/0/folders/1M2JcT4SFWcyK7Km5YwD5K3JEbCjhp8qQ">All Notes</a></li>
+                
             </ul>
-            <h3>CMSC131</h3>
+            <h3>CMSC132: </h3>
+            <p> Taken Spring 2022 <br> Professor: Fawzi Emad</p>
             <ul>
-                <li>Bachelor of photogenic posing, 2010</li>
-                <li>Llamaness certification from the Llama Institute, 2014</li>
-                <li>I coded a website, 2017</li>
+              <li><a href="https://drive.google.com/drive/u/0/folders/1-k6OlM65otohH4yYeoAWAsR4F-3vUqq_">All Notes</a></li>
             </ul>
             <h3>MATH240:</h3>
+            <p> Taken Fall 2022 <br> Professor: Wisley Wong</p>
             <ul>
-                <li>Bachelor of photogenic posing, 2010</li>
-                <li>Llamaness certification from the Llama Institute, 2014</li>
-                <li>I coded a website, 2017</li>
+              <li><a href="https://drive.google.com/drive/u/0/folders/19s0YduUWyFSCUNwhGnfvW3HH_F2EZ2gz">All Notes</a></li>
+                
             </ul>
-            <h3>MATH141</h3>
+            <h3>MATH141: </h3>
+            <p> Taken Spring 2022 <br> Professor: Steven Chadwick</p>
             <ul>
-                <li>Bachelor of photogenic posing, 2010</li>
-                <li>Llamaness certification from the Llama Institute, 2014</li>
-                <li>I coded a website, 2017</li>
+              <li><a href="https://drive.google.com/drive/u/0/folders/1LueoUMYT6tV078DXUj34YrMLZT2-HKjv">All Notes</a></li>
             </ul>
-            <h3>MATH140</h3>
+            <h3>STAT400: </h3>
+            <p> Taken Summer 2022 <br> Professor: Timothy Pilochowski</p>
             <ul>
-                <li>Bachelor of photogenic posing, 2010</li>
-                <li>Llamaness certification from the Llama Institute, 2014</li>
-                <li>I coded a website, 2017</li>
+              <li><a href="https://drive.google.com/drive/u/0/folders/1H03UkoYJoWl11iGdnZfwEfbbx8-XfulY">All Notes</a></li>
             </ul>
       </div>
+      <div id="Contact Me" class="tabcontent">
+        <h2 style="text-align:center;">Contact Me</h2>
+                  <div class="container" style="margin-top:30px">
+                    <div class="row">
+                      <div class="col-md-2">
+                    
+                        <div class="container">   
+                           <h1><i class="fas fa-briefcase"></i><h1>
+                            <br>
+                        </div>
+                        <div class="container">        
+                          <h1><i class="fas fa-phone"></i><h1>
+                            <br>
+                            
+                        </div>
+                        <div class="container">        
+                          <h1><i class="fas fa-home"></i><h1>
+                            <br>
+                          
+                        </div>
+                        <div class="container">  
+                          <h1><i class="fas fa-link"></i><h1>
+                            <br>
+                          </div>
+                          <div class="container">  
+                            <h1><i class="fas fa-file"></i><h1>
+                              <br>
+                          
+                        </div>
+             
+                        
+                        </ul>
+                        <hr class="d-sm-none">
+                      </div>
+                      <div class="col-md-10">
+                        <h3>Email:</h3>
+                         <p>wren.lowe@gmail.com</p>
+                         <br>
+                         <h3>Phone Number: </h3>
+                         <p>410-446-5746</p>
+                         <br>
+                         <h3>Address: </h3>
+                         <p>16 Benjamin Way, Ellicott City MD, 21043</p>
+                         <br>
+                         <h3>Linkedin: </h3>
+                         <p><a href="https://www.linkedin.com/in/wrenlowe">Linkedin Link</a></p>
+                         <br>
+                         <h3>Resume: </h3>
+                         <p><a href="https://docs.google.com/document/d/1YCvCtWCJiCKtwvLxJpGsp8P3ZW1hiWV6/edit">Resume</a></p>
+                         
+                        
+        </div>
       
       
       
