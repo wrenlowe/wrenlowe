@@ -18,7 +18,46 @@ body, html {
   margin: 0;
   font-family: Arial;
 }
+.dropbtn {
+  background-color: #9595b8;
+  color: rgb(0, 0, 0);
+  padding: 24px;
+  font-size: 20px;
+  border: none;
+  cursor: pointer;
+}
 
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  right: 0;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1;}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #afb0cf;
+}
 /* Style tab links */
 
 /* Header/Logo Title */
@@ -209,26 +248,43 @@ body, html {
             <p> Taken Fall 2022 <br> Professor: Paul Kline</p>
             <ul>
                 <li> 
-                  <p> Truth Tables and Implications:</p>
-                  <ul>
-                    <li><a href="https://drive.google.com/file/d/1HB_UEFN4F6iorIFLFUz9cz9C63vRhmFG/view">Lecture One</a></li>
-                    <li><a href="https://drive.google.com/file/d/167qXSESUPZMAdyxgObtGvL5KHXXF8aaG/view">Discussion One</a></li>
-                    <li><a href="https://drive.google.com/file/d/1hHpqLAgsWm3FzBZOJcVqTwF-LjWbzOBA/view">Lecture Two</a></li>
-                    <li><a href="https://drive.google.com/file/d/1ahaVSFhQGjczSvl4daPyBZlbAcdzJ5XW/view">Discussion Two</a></li>
-                    <li><a href="https://drive.google.com/file/d/1-lliZF3Z9bx7J2yB_hA-AJTBDpxTH9rk/view">Lecture Three</a></li>
-                  </ul>
+                  <div class="dropdown" style="float:left;">
+                    <button class="dropbtn">Truth Tables and Implications:</button>
+                    <div class="dropdown-content" style="left:0;">
+                      <ul>
+                        <li><a href="https://drive.google.com/file/d/1HB_UEFN4F6iorIFLFUz9cz9C63vRhmFG/view">Lecture One</a></li>
+                        <li><a href="https://drive.google.com/file/d/167qXSESUPZMAdyxgObtGvL5KHXXF8aaG/view">Discussion One</a></li>
+                        <li><a href="https://drive.google.com/file/d/1hHpqLAgsWm3FzBZOJcVqTwF-LjWbzOBA/view">Lecture Two</a></li>
+                        <li><a href="https://drive.google.com/file/d/1ahaVSFhQGjczSvl4daPyBZlbAcdzJ5XW/view">Discussion Two</a></li>
+                        <li><a href="https://drive.google.com/file/d/1-lliZF3Z9bx7J2yB_hA-AJTBDpxTH9rk/view">Lecture Three</a></li>
+                      </ul>
+                    </div>
+                  </div>
                   <li>
-                    <p> Contionals, Laws of Equivalence, Circuits, and Rules of Inference </p>
-                  <ul>
-                    <li><a href="https://drive.google.com/drive/u/0/folders/1CK2bn2WbapzSey1YpE5C_ghK24o3xMAl">Lecture Four</a></li>
-                    <li><a href="https://drive.google.com/file/d/1RQE6XO0VdEUy93Tna9Wz4w2WWklZFwEn/view">Discussion Three</a></li>
-                    <li><a href="https://drive.google.com/drive/u/0/folders/1CK2bn2WbapzSey1YpE5C_ghK24o3xMAl">Lecture Five</a></li>
-                    <li><a href="https://drive.google.com/file/d/1mbxhGVCrjWvTSwZkaUXUm2ov3taMIe5b/view">Discussion Four</a></li>
-                  </ul>
-                  </li>
-                  <li>
-                    <p> Sets, Quantifiers, and Number Theory </p>
-                  <ul>
+                    <br> 
+                    <br>
+                    <br>
+                    <li>
+                    <div class="dropdown" style="float:left;">
+                      <button class="dropbtn">Contionals, Laws of Equivalence, Circuits, and Rules of Inference:</button>
+                      <div class="dropdown-content" style="left:0;">
+                        <ul>
+                          <li><a href="https://drive.google.com/drive/u/0/folders/1CK2bn2WbapzSey1YpE5C_ghK24o3xMAl">Lecture Four</a></li>
+                          <li><a href="https://drive.google.com/file/d/1RQE6XO0VdEUy93Tna9Wz4w2WWklZFwEn/view">Discussion Three</a></li>
+                          <li><a href="https://drive.google.com/drive/u/0/folders/1CK2bn2WbapzSey1YpE5C_ghK24o3xMAl">Lecture Five</a></li>
+                          <li><a href="https://drive.google.com/file/d/1mbxhGVCrjWvTSwZkaUXUm2ov3taMIe5b/view">Discussion Four</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                    </li>
+                    <br> 
+                    <br>
+                    <br>
+                    <li>
+                    <div class="dropdown" style="float:left;">
+                      <button class="dropbtn">Sets, Quantifiers, and Number Theory</button>
+                      <div class="dropdown-content" style="left:0;">
+                      <ul>
                     <li><a href="https://drive.google.com/file/d/1whATFiSRTzjpcmy8AgAOyHCXyAAnPJeo/view">Lecture Six</a></li>
                     <li><a href="https://drive.google.com/drive/u/0/folders/1CK2bn2WbapzSey1YpE5C_ghK24o3xMAl">Discussion Five</a></li>
                     <li><a href="https://drive.google.com/file/d/106vPc25Up7NP_cTkeZanjlRqTFW3p8NS/view">Discussion Six</a></li>
@@ -237,73 +293,131 @@ body, html {
                     <li><a href="https://drive.google.com/file/d/1TbPbU-VLd-MjCrtOZ2ZvBPPh2bY9IOxe/view">Extra Number Theory Notes</a></li>
                     <li><a href="https://drive.google.com/file/d/1pya-SeRNrFSbNhiQyHy1fGgKsOk-IgMZ/view">Extra Quantifier Notes</a></li>
                   </ul>
+                      </div>
+                    </div>
                   </li>
-                  <li>
-                    <p> Proofs: Weak, Strong, and Structural </p>
-                  <ul>
-                    <li><a href="https://drive.google.com/file/d/1AHf4pa_ZZfgnaLxj2ZLGVHM07zwY7KJJ/view">Lecture Eight</a></li>
-                    <li><a href="https://drive.google.com/file/d/1s-7XYkgLGNg3jr4Xinq5MpJOpnCDYIQq/view">Discussion Seven</a></li>
-                    <li><a href="https://drive.google.com/file/d/1KYm-8qW9YTKYi0YIusvAegMxKb3TLSk8/view">Lecture Nine</a></li>
-                    <li><a href="https://drive.google.com/file/d/1p3D62gGsn2fEMXSs-WG1yN8fxTSgG7Yu/view">Discussion Eight</a></li>
-                    <li><a href="https://drive.google.com/file/d/1o4W82iVgdzPY_SYMRE8SF9QIqwx8Wb-H/view">Lecture Thirteen: Set Proofs</a></li>
-                    <li><a href="https://drive.google.com/file/d/1bt8pxpT4CcXX_7GfxjWBj9D6xKxgQirB/view">Discussion Ten: Set Proofs</a></li>
-                    <li><a href="https://drive.google.com/file/d/1NHD03cC47o4523oW26VVPoHDaD6ZfPaw/view">Discussion Eleven: Set Proof</a></li>
-                    <li><a href="https://drive.google.com/file/d/156y2YF1uYM3Da4hicuPmjFDXmCm-g58c/view">Lecture Sixteen: Weak Induction</a></li>
-                    <li><a href="https://drive.google.com/file/d/15Prk2Y44TXeff2GQlwandQiH_f12Ndhk/view">Discussion Fourteen: Weak Induction</a></li>
-                    <li><a href="https://drive.google.com/file/d/11kKk2ZL1IshTdR2du0-5euA8NKgDD51u/view">Lecture Seventeen: Structural Induction</a></li>
-                    <li><a href="https://drive.google.com/file/d/1IqdRWl8P4c_XngqW-INnSlV5D_ORBdX_/view">Discussion Fifteen: Strong Induction</a></li>
-                    <li><a href="https://drive.google.com/file/d/1GZJelA9ZdE-pqp5PEfWffBkIL0G9ZJ0n/view">Lecture Eighteen: Structural Induction</a></li>
-                    <li><a href="https://drive.google.com/file/d/1KDd1wu3RW9ZKypPiKH_EcgYQ3QYMiLLG/view">Discussion Sixteen: Structural Induction</a></li>
-                    <li><a href="https://drive.google.com/file/d/1yRsnx1ypUAYvi1yeDF9dQrSWWkJcln-L/view">Lecture Nineteen: Structural Induction: Binary trees</a></li>
-                    <li><a href="https://drive.google.com/file/d/1W-33j2V4F_b3wdfqPoNTG-j3Yk8oAFAT/view">Discussion Seventeen: Structural Induction: Binary trees</a></li>
-                
-                  </ul>
+                  
+                    <br>
+                    <br>
+                    <br>
+                    <li>
+                    <div class="dropdown" style="float:left;">
+                      <button class="dropbtn"> Proofs: Weak, Strong, and Structural</button>
+                      <div class="dropdown-content" style="left:0;">
+                        <ul>
+                          <li><a href="https://drive.google.com/file/d/1AHf4pa_ZZfgnaLxj2ZLGVHM07zwY7KJJ/view">Lecture Eight</a></li>
+                          <li><a href="https://drive.google.com/file/d/1s-7XYkgLGNg3jr4Xinq5MpJOpnCDYIQq/view">Discussion Seven</a></li>
+                          <li><a href="https://drive.google.com/file/d/1KYm-8qW9YTKYi0YIusvAegMxKb3TLSk8/view">Lecture Nine</a></li>
+                          <li><a href="https://drive.google.com/file/d/1p3D62gGsn2fEMXSs-WG1yN8fxTSgG7Yu/view">Discussion Eight</a></li>
+                          <li><a href="https://drive.google.com/file/d/1o4W82iVgdzPY_SYMRE8SF9QIqwx8Wb-H/view">Lecture Thirteen: Set Proofs</a></li>
+                          <li><a href="https://drive.google.com/file/d/1bt8pxpT4CcXX_7GfxjWBj9D6xKxgQirB/view">Discussion Ten: Set Proofs</a></li>
+                          <li><a href="https://drive.google.com/file/d/1NHD03cC47o4523oW26VVPoHDaD6ZfPaw/view">Discussion Eleven: Set Proof</a></li>
+                          <li><a href="https://drive.google.com/file/d/156y2YF1uYM3Da4hicuPmjFDXmCm-g58c/view">Lecture Sixteen: Weak Induction</a></li>
+                          <li><a href="https://drive.google.com/file/d/15Prk2Y44TXeff2GQlwandQiH_f12Ndhk/view">Discussion Fourteen: Weak Induction</a></li>
+                          <li><a href="https://drive.google.com/file/d/11kKk2ZL1IshTdR2du0-5euA8NKgDD51u/view">Lecture Seventeen: Structural Induction</a></li>
+                          <li><a href="https://drive.google.com/file/d/1IqdRWl8P4c_XngqW-INnSlV5D_ORBdX_/view">Discussion Fifteen: Strong Induction</a></li>
+                          <li><a href="https://drive.google.com/file/d/1GZJelA9ZdE-pqp5PEfWffBkIL0G9ZJ0n/view">Lecture Eighteen: Structural Induction</a></li>
+                          <li><a href="https://drive.google.com/file/d/1KDd1wu3RW9ZKypPiKH_EcgYQ3QYMiLLG/view">Discussion Sixteen: Structural Induction</a></li>
+                          <li><a href="https://drive.google.com/file/d/1yRsnx1ypUAYvi1yeDF9dQrSWWkJcln-L/view">Lecture Nineteen: Structural Induction: Binary trees</a></li>
+                          <li><a href="https://drive.google.com/file/d/1W-33j2V4F_b3wdfqPoNTG-j3Yk8oAFAT/view">Discussion Seventeen: Structural Induction: Binary trees</a></li>
+                      
+                        </ul>
+                      </div>
+                    </div>
                   </li>
-                  <li>
-                    <p> Relations, Functions, Countability, and Combinatorics </p>
-                  <ul>
-                    <li><a href="https://drive.google.com/drive/u/0/folders/1CK2bn2WbapzSey1YpE5C_ghK24o3xMAl">Lecture Eleven</a></li>
-                    <li><a href="https://drive.google.com/file/d/1ZfSXNHaTq16a_UpZfCDd7Yq7AJdqUCoP/view">Discussion Nine</a></li>
-                    <li><a href="https://drive.google.com/file/d/1S49TfNSCaK_1ZTHCv6XDjBBnYGzA9bap/view">Lecture Twelve</a></li>
-                    <li><a href="https://drive.google.com/file/d/1a4EWxAWoYJm_PWMpH1ldrUHpeU86RPOM/view">Discussion Twelve: Countability</a></li>
-                    <li><a href="https://drive.google.com/file/d/1gXo8ucjHwHsElAtSTktrC4NvrqTLIrWd/view">Lecture Fourteen: Countability</a></li>
-                    <li><a href="https://drive.google.com/file/d/1nnF8d8urLjt8QnRUGJ9X4k5hiDRB-3oD/view">Lecture Fifteen: Countability</a></li>
-                    <li><a href="https://drive.google.com/file/d/1uWzxas5qDLyweKs53nrSgKn3llCyJrGJ/view">Discussion Thirteen: Cardinality</a></li>
-                    <li><a href="https://drive.google.com/file/d/1KWsijTonIMEvh2Ui2DWNvYFSdqguJOnr/view">Lecture Twenty: Combinatorics</a></li>
-                    <li><a href="https://drive.google.com/file/d/1Gb_bR-vyixB1MCxsAiEe4Ri7p9apgiRa/view">Discussion Eighteen: Combinatorics</a></li>
-                    
-                    
-                  </ul>
+                  
+                    <br>
+                    <br>
+                    <br>
+                    <li>
+                    <div class="dropdown" style="float:left;">
+                      <button class="dropbtn"> Relations, Functions, Countability, and Combinatorics</button>
+                      <div class="dropdown-content" style="left:0;">
+                        Relations, Functions, Countability, and Combinatorics
+                      </div>
+                    </div>
+               
                   </li>
-                
+                <br>
+                <br>
+                <br>
             </ul>
             <h3>CMSC216:</h3>
             <p> Taken Fall 2022 <br> Professor: Herve Franchesci</p>
-            <ul>
-              <li><a href="https://drive.google.com/drive/u/0/folders/1M2JcT4SFWcyK7Km5YwD5K3JEbCjhp8qQ">All Notes</a></li>
-                
-            </ul>
+            <div class="dropdown" style="float:left;">
+              <button class="dropbtn">All Notes:</button>
+              <div class="dropdown-content" style="left:0;">
+                <ul>
+                  <li><a href="https://drive.google.com/drive/u/0/folders/1M2JcT4SFWcyK7Km5YwD5K3JEbCjhp8qQ">All Notes</a></li>
+                  
+                </ul>
+              </div>
+            </div>
+            <br>
+                <br>
+                <br>
+                <br>
             <h3>CMSC132: </h3>
             <p> Taken Spring 2022 <br> Professor: Fawzi Emad</p>
-            <ul>
-              <li><a href="https://drive.google.com/drive/u/0/folders/1-k6OlM65otohH4yYeoAWAsR4F-3vUqq_">All Notes</a></li>
-            </ul>
+            <div class="dropdown" style="float:left;">
+              <button class="dropbtn">All Notes:</button>
+              <div class="dropdown-content" style="left:0;">
+                <ul>
+                  <li><a href="https://drive.google.com/drive/u/0/folders/1-k6OlM65otohH4yYeoAWAsR4F-3vUqq_">All Notes</a></li>
+                </ul>
+              </div>
+            </div>
+           
+            <br>
+                <br>
+                <br>
+                <br>
             <h3>MATH240:</h3>
             <p> Taken Fall 2022 <br> Professor: Wisley Wong</p>
-            <ul>
-              <li><a href="https://drive.google.com/drive/u/0/folders/19s0YduUWyFSCUNwhGnfvW3HH_F2EZ2gz">All Notes</a></li>
-                
-            </ul>
+            <div class="dropdown" style="float:left;">
+              <button class="dropbtn">All Notes:</button>
+              <div class="dropdown-content" style="left:0;">
+                <ul>
+                  <li><a href="https://drive.google.com/drive/u/0/folders/19s0YduUWyFSCUNwhGnfvW3HH_F2EZ2gz">All Notes</a></li>
+                    
+                </ul>
+              </div>
+            </div>
+            
+            <br>
+                <br>
+                <br>
+                <br>
             <h3>MATH141: </h3>
             <p> Taken Spring 2022 <br> Professor: Steven Chadwick</p>
-            <ul>
-              <li><a href="https://drive.google.com/drive/u/0/folders/1LueoUMYT6tV078DXUj34YrMLZT2-HKjv">All Notes</a></li>
-            </ul>
+            <div class="dropdown" style="float:left;">
+              <button class="dropbtn"> All Notes:</button>
+              <div class="dropdown-content" style="left:0;">
+                <ul>
+                  <li><a href="https://drive.google.com/drive/u/0/folders/1LueoUMYT6tV078DXUj34YrMLZT2-HKjv">All Notes</a></li>
+                </ul>
+              </div>
+            </div>
+            
+            <br>
+                <br>
+                <br>
+                <br>
             <h3>STAT400: </h3>
             <p> Taken Summer 2022 <br> Professor: Timothy Pilochowski</p>
-            <ul>
-              <li><a href="https://drive.google.com/drive/u/0/folders/1H03UkoYJoWl11iGdnZfwEfbbx8-XfulY">All Notes</a></li>
-            </ul>
+            <div class="dropdown" style="float:left;">
+              <button class="dropbtn">All Notes:</button>
+              <div class="dropdown-content" style="left:0;">
+                <ul>
+                  <li><a href="https://drive.google.com/drive/u/0/folders/1H03UkoYJoWl11iGdnZfwEfbbx8-XfulY">All Notes</a></li>
+                </ul>
+              </div>
+            </div>
+            
+            <br>
+            <br>
+            <br>
+            <br>
       </div>
       <div id="Contact Me" class="tabcontent">
         <h2 style="text-align:center;">Contact Me</h2>
